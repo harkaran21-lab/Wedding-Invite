@@ -24,7 +24,7 @@ const schedule = [
   },
   {
     title: 'Haldi',
-    dateLabel: '24 November 2026',
+    dateLabel: '23 November 2026',
     venue: 'Randhawa Niwas',
     location: 'Batala, Punjab',
     details:
@@ -169,10 +169,38 @@ function InviteView({ onOpenTraditions }) {
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.9),_rgba(251,243,233,0.95),_rgba(246,236,226,1))] text-stone-800">
       <section className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0">
+          <motion.div
+            initial={{ x: 0 }}
+            animate={{ x: '-92%' }}
+            transition={{ duration: 2, ease: [0.7, 0, 0.2, 1] }}
+            className="absolute left-0 top-0 h-full w-1/2 origin-left bg-gradient-to-r from-rose-950 via-rose-900 to-rose-800 shadow-[20px_0_50px_rgba(0,0,0,0.25)]"
+          />
+          <motion.div
+            initial={{ x: 0 }}
+            animate={{ x: '92%' }}
+            transition={{ duration: 2, ease: [0.7, 0, 0.2, 1] }}
+            className="absolute right-0 top-0 h-full w-1/2 origin-right bg-gradient-to-l from-rose-950 via-rose-900 to-rose-800 shadow-[-20px_0_50px_rgba(0,0,0,0.25)]"
+          />
+        </div>
+
+        <div className="absolute inset-0 opacity-50 [background-image:radial-gradient(circle_at_center,rgba(180,83,9,0.14)_1px,transparent_1px)] [background-size:24px_24px]" />
 
         <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-10 md:px-10 lg:px-16">
+          <div className="flex items-center justify-between text-sm uppercase tracking-[0.35em] text-amber-900/70">
+            <div className="flex items-center gap-2"><Crown className="h-4 w-4" /> Randhawa × Bal</div>
+            <div>Amritsar, Punjab</div>
+          </div>
 
           <div className="mx-auto mt-16 max-w-4xl text-center md:mt-24">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.3, duration: 0.9 }}
+              className="font-serif text-sm uppercase tracking-[0.42em] text-amber-800/80"
+            >
+              The Wedding of
+            </motion.p>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -185,14 +213,256 @@ function InviteView({ onOpenTraditions }) {
               <span className="block">Harkaran Randhawa</span>
             </motion.h1>
 
+            <motion.p
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.6, duration: 0.9 }}
+              className="font-serif mx-auto mt-6 max-w-2xl text-lg leading-8 text-stone-700 md:text-xl"
+            >
+              A traditional, elegant, and floral celebration unfolding across cherished Punjabi wedding festivities.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 1.75, duration: 0.8 }}
+              className="mt-10 inline-flex items-center gap-3 rounded-full border border-amber-300/70 bg-white/70 px-6 py-3 text-sm uppercase tracking-[0.3em] text-amber-900 shadow-sm backdrop-blur"
+            >
+              <CalendarDays className="h-4 w-4" /> 26 November 2026 · Thursday
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 2, duration: 0.8 }}
+              className="mt-8 flex items-center justify-center gap-2 text-stone-600"
+            >
+              <MapPin className="h-4 w-4 text-amber-700" /> Wedding Ceremony in Amritsar, Punjab
+            </motion.div>
           </div>
 
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 2.1, duration: 0.9 }}
+            className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4"
+          >
+            <CountdownCard value={countdown.days} label="Days" />
+            <CountdownCard value={countdown.hours} label="Hours" />
+            <CountdownCard value={countdown.minutes} label="Minutes" />
+            <CountdownCard value={countdown.seconds} label="Seconds" />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 2.25, duration: 0.9 }}
+            className="mx-auto mt-12 flex flex-wrap items-center justify-center gap-4"
+          >
+            <a
+              href="#details"
+              className="rounded-full bg-amber-700 px-7 py-3 text-sm font-medium uppercase tracking-[0.25em] text-white shadow-lg shadow-amber-900/15 transition hover:-translate-y-0.5 hover:bg-amber-800"
+            >
+              View Details Below
+            </a>
+            <button
+              onClick={onOpenTraditions}
+              className="rounded-full border border-amber-300 bg-white/75 px-7 py-3 text-sm font-medium uppercase tracking-[0.25em] text-stone-800 shadow-sm backdrop-blur transition hover:-translate-y-0.5"
+            >
+              Wedding Customs
+            </button>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2.4, duration: 1 }}
+            className="mx-auto mt-auto pt-16 text-center text-xs uppercase tracking-[0.35em] text-stone-500"
+          >
+            Scroll to unveil the celebration
+          </motion.div>
         </div>
+      </section>
+
+      <section id="details" className="mx-auto max-w-5xl px-6 py-20 md:px-10 lg:px-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8 }}
+          className="rounded-[2rem] border border-amber-200/80 bg-white/75 p-8 shadow-xl shadow-amber-900/5 backdrop-blur md:p-12"
+        >
+          <div className="text-center">
+            <p className="text-sm uppercase tracking-[0.35em] text-amber-800/70">Invitation</p>
+            <h2 className="font-serif mt-4 text-4xl text-stone-900 md:text-5xl">A Celebration of Family, Faith & Joy</h2>
+            <FloralDivider />
+          </div>
+
+          <div className="font-serif mx-auto max-w-3xl space-y-3 text-center text-lg leading-8 text-stone-700">
+            {familyLines.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="rounded-3xl border border-amber-200 bg-gradient-to-b from-amber-50 to-white p-6">
+              <CalendarDays className="h-5 w-5 text-amber-700" />
+              <h3 className="font-serif mt-4 text-2xl text-stone-900">Main Ceremony</h3>
+              <p className="mt-3 text-stone-600">Thursday, 26 November 2026</p>
+            </div>
+            <div className="rounded-3xl border border-amber-200 bg-gradient-to-b from-amber-50 to-white p-6">
+              <MapPin className="h-5 w-5 text-amber-700" />
+              <h3 className="font-serif mt-4 text-2xl text-stone-900">Location</h3>
+              <p className="mt-3 text-stone-600">Festyn Palais, Amritsar</p>
+            </div>
+            <div className="rounded-3xl border border-amber-200 bg-gradient-to-b from-amber-50 to-white p-6">
+              <HeartHandshake className="h-5 w-5 text-amber-700" />
+              <h3 className="font-serif mt-4 text-2xl text-stone-900">Celebration Style</h3>
+              <p className="mt-3 text-stone-600">Traditional · Elegant · Luxurious</p>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20 md:px-10 lg:px-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.8 }}
+          className="text-center"
+        >
+          <p className="text-sm uppercase tracking-[0.35em] text-amber-800/70">Wedding Week</p>
+          <h2 className="font-serif mt-4 text-4xl text-stone-900 md:text-5xl">Celebration Schedule</h2>
+          <FloralDivider />
+        </motion.div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {schedule.map((item, index) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{ duration: 0.7, delay: index * 0.05 }}
+              className="group rounded-[2rem] border border-amber-200/80 bg-white/80 p-7 shadow-lg shadow-amber-900/5 transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="flex items-center justify-between gap-4">
+                <h3 className="font-serif text-3xl text-stone-900">{item.title}</h3>
+                <span className="rounded-full bg-amber-50 p-2 text-amber-700"><Sparkles className="h-4 w-4" /></span>
+              </div>
+              <div className="mt-5 space-y-3 text-stone-600">
+                <p className="flex items-center gap-2"><CalendarDays className="h-4 w-4 text-amber-700" /> {item.dateLabel}</p>
+                <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-amber-700" /> {item.venue}, {item.location}</p>
+                <p className="flex items-start gap-2"><Clock3 className="mt-0.5 h-4 w-4 text-amber-700" /> {item.details}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 pb-24 md:px-10 lg:px-16">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8 }}
+          className="rounded-[2rem] border border-amber-200/80 bg-gradient-to-br from-white via-amber-50/60 to-rose-50/70 p-8 text-center shadow-xl shadow-amber-900/5 md:p-12"
+        >
+          <p className="text-sm uppercase tracking-[0.35em] text-amber-800/70">Customs & Traditions</p>
+          <h2 className="font-serif mt-4 text-4xl text-stone-900 md:text-5xl">Discover the Meaning Behind Each Celebration</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-stone-600">
+            Explore a dedicated page explaining the cultural, traditional, and wedding-day customs that shape this celebration.
+          </p>
+          <button
+            onClick={onOpenTraditions}
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-stone-900 px-7 py-3 text-sm font-medium uppercase tracking-[0.25em] text-white transition hover:-translate-y-0.5"
+          >
+            Open Customs Page <ChevronRight className="h-4 w-4" />
+          </button>
+        </motion.div>
       </section>
     </div>
   )
 }
 
+function TraditionsView({ onBack }) {
+  return (
+    <div className="min-h-screen bg-[linear-gradient(180deg,#fffaf5_0%,#f8efe4_100%)] px-6 py-10 text-stone-800 md:px-10 lg:px-16">
+      <div className="mx-auto max-w-6xl">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <button
+            onClick={onBack}
+            className="rounded-full border border-amber-300 bg-white/80 px-5 py-2 text-sm uppercase tracking-[0.25em] text-stone-800 shadow-sm"
+          >
+            Back to Invite
+          </button>
+          <div className="text-sm uppercase tracking-[0.32em] text-amber-800/70">Wedding Customs Guide</div>
+        </div>
+
+        <div className="mt-10 rounded-[2rem] border border-amber-200/70 bg-white/75 p-8 shadow-xl shadow-amber-900/5 md:p-12">
+          <p className="text-sm uppercase tracking-[0.35em] text-amber-800/70">Cultural Overview</p>
+          <h1 className="font-serif mt-4 text-4xl text-stone-900 md:text-6xl">The Meaning Behind the Celebrations</h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
+            This wedding week follows a sequence of Punjabi and Sikh wedding celebrations, each carrying its own atmosphere, symbolism, and family significance. Customs can vary from one family to another, but together these events honour joy, blessing, community, and the sacred bond of marriage.
+          </p>
+          <FloralDivider />
+          <div className="grid gap-4 text-sm text-stone-600 md:grid-cols-3">
+            <div className="rounded-3xl bg-amber-50/70 p-5"><strong className="text-stone-900">Pre-wedding joy</strong><br />Music, blessing, togetherness, and festive energy.</div>
+            <div className="rounded-3xl bg-amber-50/70 p-5"><strong className="text-stone-900">Sacred union</strong><br />The wedding ceremony marks the spiritual and familial union of two lives.</div>
+            <div className="rounded-3xl bg-amber-50/70 p-5"><strong className="text-stone-900">Celebratory close</strong><br />The reception offers a warm and elegant gathering after the wedding rites.</div>
+          </div>
+        </div>
+
+        <div className="mt-10 space-y-6">
+          {traditions.map((item, index) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.12 }}
+              transition={{ duration: 0.7, delay: index * 0.05 }}
+              className="rounded-[2rem] border border-amber-200/80 bg-white/80 p-7 shadow-lg shadow-amber-900/5 md:p-8"
+            >
+              <div className="flex items-start gap-4">
+                <div className="rounded-2xl bg-amber-50 p-3 text-amber-700"><ScrollText className="h-5 w-5" /></div>
+                <div>
+                  <h2 className="font-serif text-3xl text-stone-900">{item.title}</h2>
+                  <p className="mt-3 text-lg text-stone-700">{item.summary}</p>
+                  <p className="mt-4 leading-8 text-stone-600">{item.body}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="mt-10 rounded-[2rem] border border-amber-200/80 bg-gradient-to-br from-white to-rose-50/70 p-8 shadow-lg shadow-amber-900/5 md:p-10">
+          <h3 className="font-serif text-3xl text-stone-900">A Note on Tradition</h3>
+          <p className="mt-4 leading-8 text-stone-600">
+            Punjabi and Sikh wedding customs can differ across families, regions, and personal preferences. This page presents elegant guest-friendly explanations intended to help loved ones understand the spirit of the celebrations without overwhelming them.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function App() {
-  return <InviteView />
+  const [page, setPage] = useState('invite')
+
+  return (
+    <div className="font-[Inter,system-ui,sans-serif]">
+      <AnimatePresence mode="wait">
+        {page === 'invite' ? (
+          <motion.div key="invite" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            <InviteView onOpenTraditions={() => setPage('traditions')} />
+          </motion.div>
+        ) : (
+          <motion.div key="traditions" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            <TraditionsView onBack={() => setPage('invite')} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  )
 }
