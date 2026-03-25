@@ -24,7 +24,7 @@ const schedule = [
   },
   {
     title: 'Haldi',
-    dateLabel: '23 November 2026',
+    dateLabel: '24 November 2026',
     venue: 'Randhawa Niwas',
     location: 'Batala, Punjab',
     details:
@@ -68,53 +68,89 @@ const traditions = [
   {
     title: 'Sangeet',
     summary:
-      'A lively family celebration of song and dance that sets a joyful tone for the days ahead.',
+      'A joyful family celebration of music and dance that sets the tone for the wedding festivities.',
     body:
-      'In many Punjabi wedding celebrations, the Sangeet brings both families together through music, dance performances, playful teasing, and shared excitement. While modern Sangeets can be grand and choreographed, their heart remains the same: joy, togetherness, and celebration before the wedding ceremony.',
+      'The Sangeet is one of the most vibrant and anticipated pre-wedding celebrations in many Punjabi weddings. It brings both families together in an atmosphere of laughter, music, performance, and shared excitement before the wedding day. While modern Sangeet celebrations can be highly styled and choreographed, their heart remains the same: togetherness, celebration, and the joyful build-up to marriage.',
+    expect:
+      'A lively evening filled with music, dancing, family performances, celebration, and a high-energy atmosphere.',
+    attire:
+      'Festive, colourful, and dressy outfits are ideal. Guests often enjoy wearing bold traditional clothing or elegant formalwear.',
+    etiquette:
+      '',
   },
   {
     title: 'Haldi',
     summary:
-      'A blessing ritual in which turmeric paste is applied to the bride and groom before the wedding.',
+      'A blessing ritual in which turmeric paste is lovingly applied to the bride and groom before the wedding.',
     body:
-      'The Haldi ceremony is associated with purification, blessing, and auspicious beginnings. Family members lovingly apply haldi paste as part of a warm and intimate gathering. It is one of the most visually vibrant pre-wedding traditions and symbolizes affection, protection, and celebration.',
+      'The Haldi ceremony is associated with blessing, cleansing, protection, and auspicious beginnings. Family members apply haldi paste to the bride or groom as part of a warm and intimate gathering. It is one of the most visually radiant events of the wedding celebrations and reflects affection, laughter, and the blessings of loved ones before marriage.',
+    expect:
+      'A cheerful and intimate gathering with a warm family atmosphere, playful moments, bright colours, and meaningful ritual participation.',
+    attire:
+      'Yellow, pastel, or light-coloured outfits are especially popular. Since turmeric can stain, guests may prefer clothing suited to a playful setting.',
+    etiquette:
+      '',
   },
   {
     title: 'Shagun',
     summary:
-      'An auspicious exchange of blessings, gifts, and goodwill between families.',
+      'An auspicious exchange of blessings, goodwill, and family honour.',
     body:
-      'Shagun is often understood as a gesture of blessing and good fortune. Depending on family traditions, it may include gifts, sweets, symbolic offerings, and expressions of acceptance and joy. Its meaning is rooted in honour, prosperity, and the strengthening of familial bonds.',
+      'Shagun represents a gesture of good fortune, blessing, acceptance, and joyful intention. Depending on the family’s customs, it may include symbolic gifts, sweets, tokens of affection, and formal expressions of goodwill between both families. Its meaning is rooted in respect, prosperity, and the strengthening of family bonds as the wedding approaches.',
+    expect:
+      'A meaningful and family-centred gathering focused on blessings, symbolic gestures, and honouring the union of two families.',
+    attire:
+      'Elegant traditional or modest formal attire is well suited to the tone of this event.',
+    etiquette:
+      '',
   },
   {
     title: 'Jaago',
     summary:
-      'A spirited Punjabi celebration traditionally associated with music, dancing, and festive energy at night.',
+      'A spirited Punjabi celebration of music, movement, and festive energy held in the lead-up to the wedding.',
     body:
-      'Jaago is one of the most vibrant Punjabi pre-wedding events. Family and friends gather in high energy, often singing and dancing with celebratory flair. It reflects communal joy and announces that a wedding is being celebrated with full spirit and enthusiasm.',
+      'Jaago is one of the most expressive and lively Punjabi pre-wedding traditions. It is associated with singing, dancing, celebration at night, and the joyful announcement that a wedding is being celebrated in full spirit. The event reflects family pride, community excitement, and the vibrant social energy that surrounds Punjabi wedding festivities.',
+    expect:
+      'A high-energy evening celebration with lots of dancing, music, laughter, and festive atmosphere.',
+    attire:
+      'Bright, celebratory, and energetic looks work beautifully here, including traditional Punjabi outfits or elegant festive wear.',
+    etiquette:
+      '',
   },
   {
     title: 'Wedding Day',
     summary:
-      'The central day of union, family gathering, and sacred celebration.',
+      'The central and sacred celebration of marriage, family, and spiritual union.',
     body:
-      'For Sikh weddings, the sacred marriage ceremony is known as Anand Karaj, meaning a blissful union. It takes place in the presence of the Guru Granth Sahib, and the couple circles the Guru Granth Sahib during the four Laavan hymns, which describe the spiritual journey of marriage. Some wedding days may also include family customs such as the milni and other welcoming traditions depending on family practice.',
+      'For Sikh weddings, the marriage ceremony is known as Anand Karaj, meaning a blissful union. It takes place in the presence of the Guru Granth Sahib and centres on the spiritual bond of marriage. During the ceremony, the couple circles the Guru Granth Sahib as the Laavan hymns are recited, representing the spiritual journey of marriage. The day may also include family customs such as welcoming rituals and other meaningful traditions shared between both families.',
+    expect:
+      'A beautiful and reverent ceremony centred on faith, family, blessing, and the sacred union of marriage, followed by joyful celebration with loved ones.',
+    attire:
+      'Formal traditional attire or elegant formalwear is most appropriate for the main wedding ceremony.',
+    etiquette:
+      'For Sikh ceremonies, guests may be asked to remove their shoes and cover their heads before entering the ceremony space. Respectful and modest behaviour is appreciated throughout.',
   },
   {
     title: 'Reception',
     summary:
-      'A graceful post-wedding celebration shared with family and guests.',
+      'A graceful and elegant celebration shared with family, friends, and loved ones after the wedding ceremony.',
     body:
-      'The reception is a time to gather after the formal wedding rites, celebrate the newly married couple, and enjoy the company of friends and extended family. It is often the most polished and socially expansive event of the wedding week, combining elegance with gratitude.',
+      'The reception is a time to gather after the sacred wedding rites and celebrate the newly married couple in a more social and expansive setting. It is often a moment of joy, gratitude, photographs, shared meals, warm wishes, and the company of extended family and friends. While the ceremony carries spiritual significance, the reception offers a refined and celebratory close to the wedding festivities.',
+    expect:
+      'An elegant event with celebration, dining, photographs, conversation, and a warm shared atmosphere with family and friends.',
+    attire:
+      'Formal, polished, and evening-appropriate attire is ideal for the reception.',
+    etiquette:
+      '',
   },
 ]
 
 const familyLines = [
   'With the blessings of our parents and grandparents,',
   'the families of',
-  'Harkaran Singh Randhawa & Sehej Bal',
+  'Harkaran Randhawa & Sehej Bal',
   'request the honour of your presence',
-  'at our wedding celebrations.',
+  'at our wedding festivities.',
 ]
 
 function useCountdown(targetDate) {
@@ -159,6 +195,17 @@ function CountdownCard({ value, label }) {
     <div className="rounded-3xl border border-amber-200/70 bg-white/70 px-5 py-4 text-center shadow-sm backdrop-blur">
       <div className="text-3xl font-semibold tracking-tight text-stone-900">{value}</div>
       <div className="mt-1 text-xs uppercase tracking-[0.28em] text-stone-500">{label}</div>
+    </div>
+  )
+}
+
+function DetailRow({ label, value }) {
+  if (!value) return null
+
+  return (
+    <div className="mt-4 rounded-2xl bg-amber-50/70 px-4 py-3">
+      <p className="text-[11px] uppercase tracking-[0.28em] text-amber-800/75">{label}</p>
+      <p className="mt-2 leading-7 text-stone-600">{value}</p>
     </div>
   )
 }
@@ -425,11 +472,18 @@ function TraditionsView({ onBack }) {
               className="rounded-[2rem] border border-amber-200/80 bg-white/80 p-7 shadow-lg shadow-amber-900/5 md:p-8"
             >
               <div className="flex items-start gap-4">
-                <div className="rounded-2xl bg-amber-50 p-3 text-amber-700"><ScrollText className="h-5 w-5" /></div>
-                <div>
+                <div className="rounded-2xl bg-amber-50 p-3 text-amber-700">
+                  <ScrollText className="h-5 w-5" />
+                </div>
+
+                <div className="w-full">
                   <h2 className="font-serif text-3xl text-stone-900">{item.title}</h2>
                   <p className="mt-3 text-lg text-stone-700">{item.summary}</p>
                   <p className="mt-4 leading-8 text-stone-600">{item.body}</p>
+
+                  <DetailRow label="What guests can expect" value={item.expect} />
+                  <DetailRow label="Attire" value={item.attire} />
+                  <DetailRow label="Etiquette note" value={item.etiquette} />
                 </div>
               </div>
             </motion.div>
