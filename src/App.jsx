@@ -24,7 +24,7 @@ const schedule = [
   },
   {
     title: 'Haldi',
-    dateLabel: '24 November 2026',
+    dateLabel: '23 November 2026',
     venue: 'Randhawa Niwas',
     location: 'Batala, Punjab',
     details:
@@ -112,9 +112,9 @@ const traditions = [
 const familyLines = [
   'With the blessings of our parents and grandparents,',
   'the families of',
-  'Harkaran Singh Randhawa & Sehej Bal',
+  'Harkaran Randhawa & Sehej Bal',
   'request the honour of your presence',
-  'at our wedding celebrations.',
+  'at our wedding festivities.',
 ]
 
 function useCountdown(targetDate) {
@@ -189,7 +189,6 @@ function InviteView({ onOpenTraditions }) {
         <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-10 md:px-10 lg:px-16">
           <div className="flex items-center justify-between text-sm uppercase tracking-[0.35em] text-amber-900/70">
             <div className="flex items-center gap-2"><Crown className="h-4 w-4" /> Randhawa × Bal</div>
-            <div>Amritsar, Punjab</div>
           </div>
 
           <div className="mx-auto mt-16 max-w-4xl text-center md:mt-24">
@@ -208,7 +207,7 @@ function InviteView({ onOpenTraditions }) {
               transition={{ delay: 1.45, duration: 0.9 }}
               className="font-serif mt-5 text-5xl leading-tight text-stone-900 sm:text-6xl md:text-7xl"
             >
-              Harkaran Randhawa <span className="gold-text">&</span> Sehej Bal
+              Sehej Bal <span className="gold-text">&</span> Harkaran Randhawa
             </motion.h1>
 
             <motion.p
@@ -235,7 +234,7 @@ function InviteView({ onOpenTraditions }) {
               transition={{ delay: 2, duration: 0.8 }}
               className="mt-8 flex items-center justify-center gap-2 text-stone-600"
             >
-              <MapPin className="h-4 w-4 text-amber-700" /> Wedding Ceremony in Amritsar, Punjab
+              <MapPin className="h-4 w-4 text-amber-700" /> Wedding Festivities in Amritsar, Punjab
             </motion.div>
           </div>
 
