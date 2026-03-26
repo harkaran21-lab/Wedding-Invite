@@ -146,7 +146,8 @@ const traditions = [
 ]
 
 const familyLines = [
-  'With the blessings of our parents and grandparents,',
+  'With the blessings of our',
+  'grandparents and parents,',
   'the families of',
   'Harkaran Randhawa & Sehej Bal',
   'request the honour of your presence',
@@ -236,7 +237,6 @@ function InviteView({ onOpenTraditions }) {
         <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-10 md:px-10 lg:px-16">
           <div className="flex items-center justify-between text-sm uppercase tracking-[0.35em] text-amber-900/70">
             <div className="flex items-center gap-2"><Crown className="h-4 w-4" /> Randhawa × Bal</div>
-            <div>Amritsar, Punjab</div>
           </div>
 
           <div className="mx-auto mt-16 max-w-4xl text-center md:mt-24">
