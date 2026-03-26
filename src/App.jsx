@@ -202,13 +202,13 @@ function InviteView({ onOpenTraditions }) {
             initial={{ x: 0 }}
             animate={{ x: '-92%' }}
             transition={{ duration: 2, ease: [0.7, 0, 0.2, 1] }}
-            className="absolute left-0 top-0 h-full w-1/2 origin-left bg-gradient-to-r from-[#f7e7ce] via-[#e6d3a3] to-[#d4b77d] shadow-[20px_0_50px_rgba(0,0,0,0.25)]"
+            className="absolute left-0 top-0 h-full w-1/2 origin-left bg-gradient-to-r from-[#063d2e] via-[#0b5c45] to-[#0f7a5c] shadow-[20px_0_50px_rgba(0,0,0,0.25)]"
           />
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: '92%' }}
             transition={{ duration: 2, ease: [0.7, 0, 0.2, 1] }}
-            className="absolute right-0 top-0 h-full w-1/2 origin-right bg-gradient-to-r from-[#f7e7ce] via-[#e6d3a3] to-[#d4b77d] shadow-[-20px_0_50px_rgba(0,0,0,0.25)]"
+            className="absolute right-0 top-0 h-full w-1/2 origin-right bg-gradient-to-r from-[#063d2e] via-[#0b5c45] to-[#0f7a5c] shadow-[-20px_0_50px_rgba(0,0,0,0.25)]"
           />
         </div>
 
