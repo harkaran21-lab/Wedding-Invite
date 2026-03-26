@@ -321,7 +321,7 @@ function InviteView({ onOpenTraditions }) {
         >
           <div className="text-center">
             <p className="text-sm uppercase tracking-[0.35em] text-amber-800/70">Invitation</p>
-            <h2 className="font-serif mt-4 text-4xl text-stone-900 md:text-5xl">A Celebration of Family, Faith & Joy</h2>
+            <h2 className="font-serif mt-4 text-4xl text-stone-900 md:text-5xl">A Celebration of Love, Family, & Faith</h2>
             <FloralDivider />
           </div>
 
