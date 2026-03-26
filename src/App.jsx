@@ -29,7 +29,7 @@ const schedule = [
     location: 'Batala, Punjab',
     details:
       'A heartfelt ceremony marking blessings, goodwill, and the formal exchange of auspicious wishes.',
-    mapUrl: 'https://www.google.com/maps?q=Randhawa+Niwas+Batala+Punjab',
+    mapUrl: 'https://maps.app.goo.gl/A5uKvTwoeVz9u3226',
   },
   {
     title: 'Jaago',
