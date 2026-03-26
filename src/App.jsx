@@ -46,7 +46,7 @@ const schedule = [
     location: 'Amritsar, Punjab',
     details:
       'The central celebration of the wedding, honouring family, faith, and the union of two lives.',
-    mapUrl: 'https://www.google.com/maps?q=Festyn+Palais+Amritsar+Punjab',
+    mapUrl: 'https://maps.app.goo.gl/hn67pyMvw38ZMZ6FA',
   },
   {
     title: 'Reception',
@@ -55,7 +55,7 @@ const schedule = [
     location: 'Amritsar, Punjab',
     details:
       'An elegant closing celebration to share joy, gratitude, and warm wishes with loved ones.',
-    mapUrl: 'https://www.google.com/maps?q=G+Western+Villa+Amritsar+Punjab',
+    mapUrl: 'https://maps.app.goo.gl/BYJ97fEmKv8piFDf9',
   },
 ]
 
