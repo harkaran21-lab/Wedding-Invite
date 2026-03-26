@@ -16,7 +16,7 @@ const weddingDate = new Date('2026-11-26T10:00:00+05:30')
 const schedule = [
   {
     title: 'Sangeet',
-    dateLabel: '23 November 2026',
+    dateLabel: '22 November 2026',
     venue: 'Randhawa Niwas',
     location: 'Batala, Punjab',
     details:
@@ -24,7 +24,7 @@ const schedule = [
   },
   {
     title: 'Haldi',
-    dateLabel: '24 November 2026',
+    dateLabel: '23 November 2026',
     venue: 'Randhawa Niwas',
     location: 'Batala, Punjab',
     details:
