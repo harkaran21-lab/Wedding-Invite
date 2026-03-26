@@ -29,7 +29,7 @@ const schedule = [
     location: 'Batala, Punjab',
     details:
       'A heartfelt ceremony marking blessings, goodwill, and the formal exchange of auspicious wishes.',
-    mapUrl: 'https://maps.app.goo.gl/A5uKvTwoeVz9u3226',
+    mapUrl: 'https://www.google.com/maps/dir//31.8442962,75.229882/@31.8442463,75.2298203,58m/data=!3m2!1e3!4b1!4m5!4m4!1m0!1m1!4e1!3e0?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D',
   },
   {
     title: 'Jaago',
