@@ -100,7 +100,7 @@ const traditions = [
     expect:
       'An elegant event with celebration, dining, photographs, conversation, and a warm shared atmosphere with family and friends.',
     attire:
-      'Formal, polished, and evening-appropriate attire is ideal for the reception.',
+      'Formal, polished, and appropriate attire is ideal for the reception.',
     etiquette:
       '',
   },
