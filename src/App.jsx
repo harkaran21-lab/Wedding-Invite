@@ -14,15 +14,7 @@ import {
 const weddingDate = new Date('2026-11-26T10:00:00+05:30')
 
 const schedule = [
-  {
-    title: 'Sangeet',
-    dateLabel: '22 November 2026',
-    venue: 'Randhawa Niwas',
-    location: 'Batala, Punjab',
-    details:
-      'A joyful musical gathering to begin the celebrations with family, rhythm, and dancing.',
-  },
-  {
+   {
     title: 'Haldi',
     dateLabel: '23 November 2026',
     venue: 'Randhawa Niwas',
@@ -65,19 +57,6 @@ const schedule = [
 ]
 
 const traditions = [
-  {
-    title: 'Sangeet',
-    summary:
-      'A joyful family celebration of music and dance that sets the tone for the wedding festivities.',
-    body:
-      'The Sangeet is one of the most vibrant and anticipated pre-wedding celebrations in many Punjabi weddings. It brings both families together in an atmosphere of laughter, music, performance, and shared excitement before the wedding day. While modern Sangeet celebrations can be highly styled and choreographed, their heart remains the same: togetherness, celebration, and the joyful build-up to marriage.',
-    expect:
-      'A lively evening filled with music, dancing, family performances, celebration, and a high-energy atmosphere.',
-    attire:
-      'Festive, colourful, and dressy outfits are ideal. Guests often enjoy wearing bold traditional clothing or elegant formalwear.',
-    etiquette:
-      '',
-  },
   {
     title: 'Haldi',
     summary:
