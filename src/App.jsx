@@ -63,8 +63,7 @@ const traditions = [
     attire:
       'Elegant traditional or modest formal attire is well suited to the tone of this event.',
     etiquette:
-      'For sikh ceremonies, guests need to remove their shoes and socks and cover their heads with a scarf, or a handkerchief while in the presence of Guru Granth Sahib Ji'
-      '',
+      'For sikh ceremonies, guests need to remove their shoes and socks and cover their heads with a scarf, or a handkerchief while in the presence of Guru Granth Sahib Ji.',
   },
   {
     title: 'Jaago',
