@@ -63,6 +63,7 @@ const traditions = [
     attire:
       'Elegant traditional or modest formal attire is well suited to the tone of this event.',
     etiquette:
+      'For sikh ceremonies, guests need to remove their shoes and socks and cover their heads with a scarf, or a handkerchief while in the presence of Guru Granth Sahib Ji'
       '',
   },
   {
@@ -83,13 +84,13 @@ const traditions = [
     summary:
       'The central and sacred celebration of marriage, family, and spiritual union.',
     body:
-      'For Sikh weddings, the marriage ceremony is known as Anand Karaj, meaning a blissful union. It takes place in the presence of the Guru Granth Sahib and centres on the spiritual bond of marriage. During the ceremony, the couple circles the Guru Granth Sahib as the Laavan hymns are recited, representing the spiritual journey of marriage. The day may also include family customs such as welcoming rituals and other meaningful traditions shared between both families.',
+      'For Sikh weddings, the marriage ceremony is known as Anand Karaj, meaning a blissful union. It takes place in the presence of the Guru Granth Sahib Ji and centres on the spiritual bond of marriage. During the ceremony, the couple circles the Guru Granth Sahib Ji four times as the Laavan hymns are recited, representing the spiritual journey of marriage. The day may also include family customs such as welcoming rituals and other meaningful traditions shared between both families.',
     expect:
       'A beautiful and reverent ceremony centred on faith, family, blessing, and the sacred union of marriage, followed by joyful celebration with loved ones.',
     attire:
       'Formal traditional attire or elegant formalwear is most appropriate for the main wedding ceremony.',
     etiquette:
-      'For Sikh ceremonies, guests may be asked to remove their shoes and cover their heads before entering the ceremony space. Respectful and modest behaviour is appreciated throughout.',
+      'For Sikh ceremonies, guests should remove their shoes and socks and cover their heads before entering the gurudwara (A gurudwara is a sikh place of worship). Respectful and modest behaviour is appreciated throughout.',
   },
   {
     title: 'Reception',
