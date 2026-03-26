@@ -235,9 +235,9 @@ function InviteView({ onOpenTraditions }) {
               transition={{ delay: 1.45, duration: 0.9 }}
               className="font-serif mt-5 text-5xl leading-tight text-stone-900 sm:text-6xl md:text-7xl"
             >
-              <span className="block">Sehej Bal</span>
-              <span className="block gold-text my-2">&</span>
               <span className="block">Harkaran Randhawa</span>
+              <span className="block gold-text my-2">&</span>
+              <span className="block">Sehej Bal</span>
             </motion.h1>
 
             <motion.p
