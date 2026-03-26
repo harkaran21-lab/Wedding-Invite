@@ -14,7 +14,7 @@ import {
 const weddingDate = new Date('2026-11-26T10:00:00+05:30')
 
 const schedule = [
-   {
+  {
     title: 'Haldi',
     dateLabel: '23 November 2026',
     venue: 'Randhawa Niwas',
@@ -29,6 +29,7 @@ const schedule = [
     location: 'Batala, Punjab',
     details:
       'A heartfelt ceremony marking blessings, goodwill, and the formal exchange of auspicious wishes.',
+    mapUrl: 'https://www.google.com/maps?q=Randhawa+Niwas+Batala+Punjab',
   },
   {
     title: 'Jaago',
@@ -45,6 +46,7 @@ const schedule = [
     location: 'Amritsar, Punjab',
     details:
       'The central celebration of the wedding, honouring family, faith, and the union of two lives.',
+    mapUrl: 'https://www.google.com/maps?q=Festyn+Palais+Amritsar+Punjab',
   },
   {
     title: 'Reception',
@@ -53,6 +55,7 @@ const schedule = [
     location: 'Amritsar, Punjab',
     details:
       'An elegant closing celebration to share joy, gratitude, and warm wishes with loved ones.',
+    mapUrl: 'https://www.google.com/maps?q=G+Western+Villa+Amritsar+Punjab',
   },
 ]
 
@@ -380,6 +383,18 @@ function InviteView({ onOpenTraditions }) {
                 <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-amber-700" /> {item.venue}, {item.location}</p>
                 <p className="flex items-start gap-2"><Clock3 className="mt-0.5 h-4 w-4 text-amber-700" /> {item.details}</p>
               </div>
+
+              {item.mapUrl ? (
+                <a
+                  href={item.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white px-5 py-2.5 text-xs font-medium uppercase tracking-[0.24em] text-amber-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-amber-50"
+                >
+                  <MapPin className="h-4 w-4" />
+                  View on Map
+                </a>
+              ) : null}
             </motion.div>
           ))}
         </div>
