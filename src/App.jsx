@@ -147,7 +147,7 @@ const traditions = [
 
 const familyLines = [
   'With the blessings of our grandparents and parents, the families of',
-  'Sehej Bal & Harkaran',
+  'Sehej Bal & Harkaran Randhawa',
   'request the honour of your presence',
   'at our wedding festivities.',
 ]
