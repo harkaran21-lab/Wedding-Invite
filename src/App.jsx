@@ -15,14 +15,6 @@ const weddingDate = new Date('2026-11-26T10:00:00+05:30')
 
 const schedule = [
   {
-    title: 'Haldi',
-    dateLabel: '23 November 2026',
-    venue: 'Randhawa Niwas',
-    location: 'Batala, Punjab',
-    details:
-      'A radiant pre-wedding ritual celebrating blessings, warmth, and the glow of a new beginning.',
-  },
-  {
     title: 'Shagun',
     dateLabel: '24 November 2026',
     venue: 'Randhawa Niwas',
@@ -60,19 +52,6 @@ const schedule = [
 ]
 
 const traditions = [
-  {
-    title: 'Haldi',
-    summary:
-      'A blessing ritual in which turmeric paste is lovingly applied to the bride and groom before the wedding.',
-    body:
-      'The Haldi ceremony is associated with blessing, cleansing, protection, and auspicious beginnings. Family members apply haldi paste to the bride or groom as part of a warm and intimate gathering. It is one of the most visually radiant events of the wedding celebrations and reflects affection, laughter, and the blessings of loved ones before marriage.',
-    expect:
-      'A cheerful and intimate gathering with a warm family atmosphere, playful moments, bright colours, and meaningful ritual participation.',
-    attire:
-      'Yellow, pastel, or light-coloured outfits are especially popular. Since turmeric can stain, guests may prefer clothing suited to a playful setting.',
-    etiquette:
-      '',
-  },
   {
     title: 'Shagun',
     summary:
